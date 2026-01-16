@@ -27,7 +27,7 @@ All data generated and transmitted is **TEST / DEMO DATA ONLY**.
 
 ---
 
-## Repository Structure (typical)
+## Repository Structure
 
 ```
 .
