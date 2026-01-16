@@ -107,7 +107,7 @@ pytest
 
 ---
 
-## 2) Generate Peers (certificates + configs)
+## 2) Generate Peers (certificates and configs)
 
 Generate peer certificates and per-peer YAML config files:
 
@@ -187,13 +187,14 @@ Typical behaviour:
 - Escalates to `SIGKILL` if needed
 - Cleans up PID files
 
-### Emergency fallback (not recommended)
-
+### Fallback 
 Kill by process pattern:
 
 ```bash
 pkill -f "hospital_federator_demo.py --config"
 ```
+
+This can kill unintended instances but will properly kill orphaned instances too.
 
 ---
 
